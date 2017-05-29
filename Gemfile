@@ -25,7 +25,6 @@ gem 'coveralls', require: false
 gem 'rack-mini-profiler'
 gem 'stamp'
 gem 'react-rails'
-gem 'webpacker', '~> 2.0'
 
 gem 'web-console', group: :development
 
