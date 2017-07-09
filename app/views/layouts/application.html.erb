@@ -9,9 +9,9 @@
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class='container'>
 
-  <div class="navbar-header">
+  <nav class='nav navbar-nav navbar-left'>
     <ul class="nav navbar-nav navbar-right">
       <li><%= link_to "Home", root_path, id: "root_path_nav_link" %></li>
       <% if current_user %>
@@ -22,7 +22,7 @@
         <li><%= link_to "Sign In", new_user_session_path, id: "sign_in_nav_link" %></li>
       <% end %>
     </ul>
-  </div>
+  </nav>
 
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
