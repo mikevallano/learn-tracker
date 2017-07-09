@@ -7,7 +7,7 @@
 
 <p>
   <strong>Description:</strong>
-  <%= @learning.description %>
+  <%= markdown @learning.description %>
 </p>
 
 <%= link_to 'Edit', edit_learning_path(@learning) %> |

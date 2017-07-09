@@ -71,3 +71,16 @@ div {
     list-style: square;
   }
 }
+
+article.learning {
+  margin-bottom: 10px;
+  #learning-title {
+    display: block;
+  }
+  .highlight {
+  }
+}
+
+// #learning-form-container form textarea {
+//   line-height: 75px;
+// }
