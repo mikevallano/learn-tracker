@@ -1,14 +1,14 @@
 <%= form_for(@learning) do |f| %>
   <% if @learning.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@learning.errors.count, "error") %> prohibited this learning from being saved:</h2>
+  <div id="error_explanation">
+    <h2><%= pluralize(@learning.errors.count, "error") %> prohibited this learning from being saved:</h2>
 
-      <ul>
+    <ul>
       <% @learning.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+      <li><%= message %></li>
       <% end %>
-      </ul>
-    </div>
+    </ul>
+  </div>
   <% end %>
 
   <div class="field">
@@ -17,9 +17,9 @@
   </div>
   <div class="field">
     <%= f.label :description %><br>
-    <%= f.text_area :description, class: 'form-control' %>
+    <%= f.text_area :description, class: 'form-control', rows: '10' %>
   </div>
   <div class="actions">
-    <%= f.submit 'Add TIL', class: 'btn btn-success' %>
+    <%= f.submit nil, class: 'btn btn-success' %>
   </div>
 <% end %>
